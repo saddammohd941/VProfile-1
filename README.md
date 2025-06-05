@@ -21,16 +21,17 @@ Then look for the file :
 - accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
 - > mysql -u <user_name> -p accounts < accountsdb.sql
 
-  - `Execute SonarQube Scanner` > `Analysis properties`  (it is mandatary). 
-   ```sh 
-        sonar.projectKey=Sabear
-	sonar.projectName=Sabear
-	sonar.projectVersion=1.0
-	sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/src/
-	sonar.binaries=target/classes/com/visualpathit/account/controller/
-	sonar.junit.reportsPath=target/surefire-reports
-	sonar.jacoco.reportPath=target/jacoco.exec
-	sonar.java.binaries=src/main/java/com/visualpathit/account/
-     ```
+ - `Execute SonarQube Scanner` > `Analysis properties`  (it is mandatary). 
+
+```sh 
+sonar.projectKey=Sabear
+sonar.projectName=Sabear
+sonar.projectVersion=1.0
+sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/src/
+sonar.binaries=target/classes/com/visualpathit/account/controller/
+sonar.junit.reportsPath=target/surefire-reports
+sonar.jacoco.reportPath=target/jacoco.exec
+sonar.java.binaries=src/main/java/com/visualpathit/account/
+```
 
 
